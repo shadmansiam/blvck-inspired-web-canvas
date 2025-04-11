@@ -69,9 +69,9 @@ const FeaturedProducts = () => {
                 <img 
                   src={hoveredProductId === product.id ? product.hoverImageUrl : product.imageUrl} 
                   alt={product.name}
-                  className="w-full h-full object-cover transition-all duration-700 ease-in-out transform hover:scale-105"
+                  className="w-full h-full object-cover transition-all duration-1000 ease-in-out transform hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-500 group-hover:bg-opacity-10"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-1000 group-hover:bg-opacity-10"></div>
               </div>
               <div className="flex justify-between items-center">
                 <h3 className="font-medium">{product.name}</h3>
