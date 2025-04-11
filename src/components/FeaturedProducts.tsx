@@ -13,7 +13,7 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    name: 'BLVCK Hoodie',
+    name: 'ZENFIBER Hoodie',
     price: '$120',
     imageUrl: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     hoverImageUrl: '/lovable-uploads/f4e4b392-d870-4ab4-ac77-565a33957f02.png'
