@@ -65,12 +65,13 @@ const FeaturedProducts = () => {
               onMouseEnter={() => setHoveredProductId(product.id)}
               onMouseLeave={() => setHoveredProductId(null)}
             >
-              <div className="relative aspect-[3/4] overflow-hidden mb-4">
+              <div className="relative aspect-[3/4] overflow-hidden mb-4 group">
                 <img 
                   src={hoveredProductId === product.id ? product.hoverImageUrl : product.imageUrl} 
                   alt={product.name}
-                  className="w-full h-full object-cover transition-all duration-500 ease-in-out"
+                  className="w-full h-full object-cover transition-all duration-700 ease-in-out transform hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-500 group-hover:bg-opacity-10"></div>
               </div>
               <div className="flex justify-between items-center">
                 <h3 className="font-medium">{product.name}</h3>
